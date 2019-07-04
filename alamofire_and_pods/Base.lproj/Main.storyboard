@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alamofire_and_pods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utt-jm-w2B">
+                                <rect key="frame" x="63" y="335" width="248" height="41"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="29"/>
+                                <color key="textColor" red="0.14962543000455808" green="0.10666086871301605" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Bitcoin Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-wQ-2Ft">
+                                <rect key="frame" x="63" y="113" width="248" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="gWP-wX-780"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.20224719974045458" blue="0.43193402044955742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79657124179686711" green="1" blue="0.21401269070376483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dPW-wQ-2Ft" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AFY-Kf-Wfi"/>
+                            <constraint firstItem="utt-jm-w2B" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dPW-wQ-2Ft" secondAttribute="trailing" id="CNP-eW-Qfp"/>
+                            <constraint firstItem="utt-jm-w2B" firstAttribute="height" secondItem="dPW-wQ-2Ft" secondAttribute="height" id="I38-aA-wbq"/>
+                            <constraint firstItem="dPW-wQ-2Ft" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="IAg-cY-oNQ"/>
+                            <constraint firstItem="dPW-wQ-2Ft" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="OlE-hH-oAl"/>
+                            <constraint firstItem="utt-jm-w2B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="63" id="Qpe-iB-dWV"/>
+                            <constraint firstItem="utt-jm-w2B" firstAttribute="top" secondItem="dPW-wQ-2Ft" secondAttribute="bottom" constant="181" id="oak-UC-iVV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="introLabel" destination="dPW-wQ-2Ft" id="4kQ-Y2-caM"/>
+                        <outlet property="priceLabel" destination="utt-jm-w2B" id="0ix-L5-ZDD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375.19999999999999" y="47.290640394088669"/>
+        </scene>
+    </scenes>
+</document>
